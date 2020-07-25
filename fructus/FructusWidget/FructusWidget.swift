@@ -48,10 +48,10 @@ struct Provider: TimelineProvider {
         ZStack {
             VStack(spacing: 5) {
                 if widgetFamily == .systemMedium {
-                    Text("show medium arrivals here!")
+                    Text("medium preview!")
                         .foregroundColor(.white)
                 } else if widgetFamily == .systemLarge  {
-                    Text("Show large arrivals here!")
+                    Text("large preview!")
                         .foregroundColor(.white)
                 }
                 
@@ -69,7 +69,6 @@ struct Provider: TimelineProvider {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         .background(LinearGradient(gradient: Gradient(colors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")]), startPoint: .top, endPoint: .bottom))
         .cornerRadius(5)
-        .padding(.horizontal, 5)
      }
  }
 
