@@ -11,10 +11,39 @@
 		3697C47624C9E423009A2819 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697C47524C9E423009A2819 /* ContentView.swift */; };
 		3697C47824C9E426009A2819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3697C47724C9E426009A2819 /* Assets.xcassets */; };
 		3697C47B24C9E426009A2819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3697C47A24C9E426009A2819 /* Preview Assets.xcassets */; };
+		369F799124CB58FA0079182D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369F799024CB58FA0079182D /* WidgetKit.framework */; };
+		369F799324CB58FA0079182D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369F799224CB58FA0079182D /* SwiftUI.framework */; };
+		369F799624CB58FA0079182D /* FructusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369F799524CB58FA0079182D /* FructusWidget.swift */; };
+		369F799824CB58FE0079182D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369F799724CB58FE0079182D /* Assets.xcassets */; };
+		369F799C24CB58FE0079182D /* FructusWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 369F798E24CB58FA0079182D /* FructusWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		36BE75C624CA497600551C3B /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE75C524CA497600551C3B /* FruitCardView.swift */; };
 		36BE75C824CA4F1F00551C3B /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE75C724CA4F1F00551C3B /* StartButtonView.swift */; };
 		36BE75CA24CA548D00551C3B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE75C924CA548D00551C3B /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		369F799A24CB58FE0079182D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3697C46824C9E423009A2819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 369F798D24CB58FA0079182D;
+			remoteInfo = FructusWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		369F799D24CB58FE0079182D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				369F799C24CB58FE0079182D /* FructusWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3697C47024C9E423009A2819 /* fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +52,12 @@
 		3697C47724C9E426009A2819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3697C47A24C9E426009A2819 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3697C47C24C9E426009A2819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		369F798E24CB58FA0079182D /* FructusWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FructusWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		369F799024CB58FA0079182D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		369F799224CB58FA0079182D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		369F799524CB58FA0079182D /* FructusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusWidget.swift; sourceTree = "<group>"; };
+		369F799724CB58FE0079182D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		369F799924CB58FE0079182D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BE75C524CA497600551C3B /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		36BE75C724CA4F1F00551C3B /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		36BE75C924CA548D00551C3B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -36,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		369F798B24CB58FA0079182D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369F799324CB58FA0079182D /* SwiftUI.framework in Frameworks */,
+				369F799124CB58FA0079182D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -43,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				3697C47224C9E423009A2819 /* fructus */,
+				369F799424CB58FA0079182D /* FructusWidget */,
+				369F798F24CB58FA0079182D /* Frameworks */,
 				3697C47124C9E423009A2819 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				3697C47024C9E423009A2819 /* fructus.app */,
+				369F798E24CB58FA0079182D /* FructusWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +120,25 @@
 				3697C47A24C9E426009A2819 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		369F798F24CB58FA0079182D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369F799024CB58FA0079182D /* WidgetKit.framework */,
+				369F799224CB58FA0079182D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		369F799424CB58FA0079182D /* FructusWidget */ = {
+			isa = PBXGroup;
+			children = (
+				369F799524CB58FA0079182D /* FructusWidget.swift */,
+				369F799724CB58FE0079182D /* Assets.xcassets */,
+				369F799924CB58FE0079182D /* Info.plist */,
+			);
+			path = FructusWidget;
 			sourceTree = "<group>";
 		};
 		36BE75C324CA492400551C3B /* App */ = {
@@ -104,15 +170,34 @@
 				3697C46C24C9E423009A2819 /* Sources */,
 				3697C46D24C9E423009A2819 /* Frameworks */,
 				3697C46E24C9E423009A2819 /* Resources */,
+				369F799D24CB58FE0079182D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				369F799B24CB58FE0079182D /* PBXTargetDependency */,
 			);
 			name = fructus;
 			productName = fructus;
 			productReference = 3697C47024C9E423009A2819 /* fructus.app */;
 			productType = "com.apple.product-type.application";
+		};
+		369F798D24CB58FA0079182D /* FructusWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369F79A024CB58FE0079182D /* Build configuration list for PBXNativeTarget "FructusWidgetExtension" */;
+			buildPhases = (
+				369F798A24CB58FA0079182D /* Sources */,
+				369F798B24CB58FA0079182D /* Frameworks */,
+				369F798C24CB58FA0079182D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FructusWidgetExtension;
+			productName = FructusWidgetExtension;
+			productReference = 369F798E24CB58FA0079182D /* FructusWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,6 +209,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					3697C46F24C9E423009A2819 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					369F798D24CB58FA0079182D = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -142,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				3697C46F24C9E423009A2819 /* fructus */,
+				369F798D24CB58FA0079182D /* FructusWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +242,14 @@
 			files = (
 				3697C47B24C9E426009A2819 /* Preview Assets.xcassets in Resources */,
 				3697C47824C9E426009A2819 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		369F798C24CB58FA0079182D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369F799824CB58FE0079182D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +268,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		369F798A24CB58FA0079182D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369F799624CB58FA0079182D /* FructusWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		369F799B24CB58FE0079182D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 369F798D24CB58FA0079182D /* FructusWidgetExtension */;
+			targetProxy = 369F799A24CB58FE0079182D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3697C47D24C9E426009A2819 /* Debug */ = {
@@ -293,6 +406,7 @@
 		3697C48024C9E426009A2819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +428,7 @@
 		3697C48124C9E426009A2819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +442,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anathayna.fructus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		369F799E24CB58FE0079182D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FructusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anathayna.fructus.FructusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		369F799F24CB58FE0079182D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FructusWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anathayna.fructus.FructusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -349,6 +504,15 @@
 			buildConfigurations = (
 				3697C48024C9E426009A2819 /* Debug */,
 				3697C48124C9E426009A2819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369F79A024CB58FE0079182D /* Build configuration list for PBXNativeTarget "FructusWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369F799E24CB58FE0079182D /* Debug */,
+				369F799F24CB58FE0079182D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
