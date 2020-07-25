@@ -113,7 +113,9 @@
 				3699965424CCAA98002E7116 /* Model */,
 				36BE75C424CA494400551C3B /* View */,
 				36BE75C324CA492400551C3B /* App */,
-				3699965824CCAB8B002E7116 /* config */,
+				3697C47724C9E426009A2819 /* Assets.xcassets */,
+				3697C47924C9E426009A2819 /* Preview Content */,
+				3697C47C24C9E426009A2819 /* Info.plist */,
 			);
 			path = fructus;
 			sourceTree = "<group>";
@@ -140,16 +142,6 @@
 				3699965924CCABA4002E7116 /* FruitData.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		3699965824CCAB8B002E7116 /* config */ = {
-			isa = PBXGroup;
-			children = (
-				3697C47724C9E426009A2819 /* Assets.xcassets */,
-				3697C47C24C9E426009A2819 /* Info.plist */,
-				3697C47924C9E426009A2819 /* Preview Content */,
-			);
-			path = config;
 			sourceTree = "<group>";
 		};
 		369F798F24CB58FA0079182D /* Frameworks */ = {
