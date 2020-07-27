@@ -32,7 +32,7 @@ struct Provider: TimelineProvider {
  }
 
  struct SimpleEntry: TimelineEntry {
-     public let date: Date
+    public let date: Date
  }
 
  struct PlaceholderView : View {
@@ -43,6 +43,7 @@ struct Provider: TimelineProvider {
 
  struct FructusWidgetEntryView : View {
     @Environment(\.widgetFamily) private var widgetFamily
+    var entry: SimpleEntry? = nil
     
      var body: some View {
         ZStack {
@@ -74,11 +75,12 @@ struct Provider: TimelineProvider {
 
  @main
  struct FructusWidget: Widget {
-     private let kind: String = "FructusWidget"
-
      public var body: some WidgetConfiguration {
-         StaticConfiguration(kind: kind, provider: Provider(), placeholder: PlaceholderView()) { entry in
-             FructusWidgetEntryView()
+         StaticConfiguration(
+            kind: "FructusWidget",
+            provider: Provider(),
+            placeholder: PlaceholderView()) { entry in
+             FructusWidgetEntryView(entry: entry)
          }
          .configurationDisplayName("Fructus Widget")
          .description("this is an fructus widget.")
